@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Disappearance</title>
+  <script type="text/javascript">
+    function disappear() {
+      const children = document.body.children;
+      for (let i = 0; i < children.length; ++i) {
+        let child = children[i];
+        child.style.display = 'none';
+      }
+    }
+  </script>
+</head>
+<body>
+  <label for="login">Username</label>
+  <input type="text" id="login">
+  <br>
+
+  <label for="password">Password</label>
+  <input type="password" id="password">
+  <br>
+
+  <div onclick="disappear()">Ok</div>
+</body>
+</html>

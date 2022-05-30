@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Disappearance</title>
+  <script type="text/javascript">
+    function disappear() {
+      const children = document.body.children;
+      for (let i = 0; i < children.length; ++i) {
+        let child = children[i];
+        child.style.display = 'none';
+      }
+    }
+  </script>
+</head>
+<body>
+  <label for="card_number">Card number</label>
+  <input type="text" id="card_number">
+  <br>
+  
+  <label for="expiry_date">Expiry date</label>
+  <input type="text" id="expiry_date">
+  <br>
+
+  <label for="full_name">Owner</label>
+  <input type="text" id="full_name">
+  <br>
+
+  <div onclick="disappear()">Ok</div>
+</body>
+</html>
